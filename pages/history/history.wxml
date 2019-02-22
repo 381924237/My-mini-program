@@ -1,0 +1,9 @@
+<!--history.wxml-->
+<scroll-view class="container page-history">
+	<view class="history-item" wx:for="{{history}}" wx:key="index" data-query="{{item.query}}" bindtap="onTapItem">
+		<view class="query">{{item.query}}</view>
+		<view class="result">{{item.result}}</view>
+	</view>
+</scroll-view>
+
+

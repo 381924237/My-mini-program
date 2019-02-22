@@ -1,0 +1,10 @@
+.lang-item {
+	color: #fff;
+	padding: 20rpx 40rpx;
+	margin: 10rpx 10rpx;
+	background: #03d5b2;
+}
+
+.icon-right {
+	padding-left: 20rpx;
+}

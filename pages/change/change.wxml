@@ -1,0 +1,12 @@
+<!--change.wxml-->
+<view class="container">
+  <view class='lang-item' hidden="{{refer == 'to'}}" data-chs="自动检测" data-lang="auto" data-index="999" bindtap='onTapItem'>
+    <text class="txt">自动检测</text>
+    <icon class='iconfont icon-right' wx:if="{{chooseIndex == 999}}"></icon>
+  </view>
+
+  <view class="lang-item" wx:for="{{langList}}" wx:for-item="language" wx:key="index" data-lang="{{language.lang}}" data-chs="{{language.chs}}" data-index="{{index}}" bindtap='onTapItem'>
+    <text class="txt">{{language.chs}}</text>
+    <text class="iconfont icon-right" wx:if="{{index==chooseIndex}}"></text>
+  </view>
+</view>

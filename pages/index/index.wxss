@@ -1,0 +1,42 @@
+/**index.wxss**/
+.change {
+	display: flex;
+	justify-content: space-between;
+	padding: 20rpx 40rpx;
+	color: #03d5b2;
+	align-items: center;
+}
+
+.input-area {
+	background: #fff;
+	border-bottom: 1px solid #c7cee0;
+	position: relative;
+}
+
+.icon-close {
+	position: absolute;
+	right: 20rpx;
+	top: 20rpx;
+	font-size: 40rpx;
+}
+
+.input-area textarea {
+	padding: 30rpx 20rpx 30rpx 30rpx;
+	margin: 0;
+	width: calc(100% - 56rpx);
+	box-sizing: border-box;
+}
+
+.translate-area {
+	padding: 30rpx 0 30rpx 30rpx;
+	background: #fff;
+	min-height: 40rpx;
+}
+
+.translate-area .title {
+	color: #8995a1;
+}
+
+.translate-area .content {
+	padding: 20rpx 0;
+}

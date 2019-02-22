@@ -1,0 +1,27 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1049852_1xx0pcf7b59.ttf?t=1550543940254') format('truetype') /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	padding: 0 5rpx;
+}
+
+.icon-exchange:before {
+  content: "\e6d2";
+}
+
+.icon-right:before {
+  content: "\e6b8";
+}
+
+.icon-close:before {
+  content: "\e656";
+}
+
+.icon-down:before {
+  content: "\e6e9";
+}

@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container page-index">
+	<view class="change">
+		<view bindtap='onChooseFrom'>
+			<text>{{fromLang.chs}}</text>
+			<text class="iconfont icon-down"></text>	
+		</view>
+
+		<text class="iconfont icon-exchange" bindtap="onExchange"></text>
+
+		<view bindtap='onChooseTo'>
+			<text>{{toLang.chs}}</text>
+			<text class="iconfont icon-down"></text>
+		</view>
+	</view>
+
+	<view class="input-area">
+		<text class="iconfont icon-close" 
+		bindtap='onTapClose'
+		hidden="{{hideClearIcon}}"
+		></text>
+
+		<textarea placeholder='请输入要翻译的文本' 
+		placeholder-style='color: #8995a1'
+		value="{{query}}"
+		bindinput="onInput"
+		bindconfirm="onConfirm"
+		bindblur="onConfirm"
+		>
+		
+		</textarea>
+	</view>
+
+	<view class="translate-area">
+		<view class="title">译文</view>
+		<view class="content">
+			<text>{{result.dst}}</text>
+		</view>
+	</view>
+</view>
